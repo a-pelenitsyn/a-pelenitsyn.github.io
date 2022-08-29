@@ -1,4 +1,3 @@
-{% include base.html %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
@@ -9,7 +8,7 @@
     <div class="container content">
       <div class="masthead">
         <h3 class="masthead-title">
-          <a href="{{ base}}/{{ site.home-en }}" title="Home">{{ site.title-en }}</a>
+          <a href="{{ site.baseurl }}/{{ site.home-en }}" title="Home">{{ site.title-en }}</a>
           <small>{{ site.tagline-en }}</small>
         </h3>
         {% include ru.html %}
@@ -22,7 +21,7 @@
 
           <td>(&#8580;) {{ site.time | date: '%Y' }} A. Pelenitsyn</td>
           
-          <td><a href="https://github.com/ulysses4ever/ulysses.mmcs.sfedu.ru">GitHub Sources</a></td>
+          <td><a href="https://github.com/a-pelenitsyn/a-pelenitsyn.github.io">GitHub Sources</a></td>
 
 		  <td>
 <!- START COUNTER CODE -->

@@ -5,7 +5,7 @@ software and systems development, e.g. Haskell ecosystem, Nix and NixOS, (Doom) 
 modal editing (in the spirit of `vi`), Linux and Open Source Software, verified software
 and interactive theorem provers (especially, `Coq` and `Agda`). Check out:
 
-* My contributions to the [GHC Haskell compiler][3] and the [Cabal package manager][cabal] (pillars of Haskell infrastructure)
+* My contributions to the [GHC Haskell compiler][ghc] and the [Cabal package manager][cabal] (pillars of Haskell infrastructure)
 * [Blog post about my internship at Tweag I/O in 2019][4] where I developed a bridge between GHC and the Bazel build system
 
 [ghc]: https://github.com/ghc/ghc/search?o=desc&q=author%3Aulysses4ever&s=committer-date&type=Commits

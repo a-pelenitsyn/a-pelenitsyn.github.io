@@ -7,7 +7,8 @@ While on postdoc with Milind at Purdue (2023–now), I am looking into making
 irregular computations (tree traversals) more efficient via compilation or
 algorithm design for recent hardware. Our main topics are:
 - functional programming with densely represented datatypes (the [Gibbon
-  compiler][gibbon]; e.g. [arXiv:2405.17590][marmoset] to appear at ECOOP'24),
+  compiler][gibbon]; e.g. [arXiv:2405.17590][marmoset] to appear at ECOOP'24,
+  and [ISMM'24][gibbon-ismm24]),
 - compilers for sparse tensors computations (e.g. [arXiv:2311.09549][sparseauto], in submission),
 - general-purpose computations on ray-tracing hardware (e.g.
   [arXiv:2311.09168][arkade] nominated for **best paper award** at ICS'24).
@@ -50,3 +51,4 @@ More on my professional history can be found in my [Curriculum Vitæ](cv.pdf).
 [dgp-recursion-slides]: https://www.cse.chalmers.se/~myreen/tfp2018/slides/Anna_Bolotina.pdf
 [dgp-recursion]: Papers/2018-unpb-dgp-recursion.pdf
 [generic-ecc]: Papers/2012-metaprogramming-to-decoding-en.pdf
+[gibbon-ismm24]: Papers/2024-gibbon-gc.pdf 

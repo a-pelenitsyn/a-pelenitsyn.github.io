@@ -45,7 +45,7 @@ More on my professional history can be found in my [Curriculum Vitæ](cv.pdf).
 [sparseauto]: https://arxiv.org/abs/2311.09549
 [coyote]: https://github.com/raghav198/coyote
 [marmoset]: https://arxiv.org/abs/2405.17590
-[arkade]: https://a.pelenitsyn.top/Papers/2024-ICS-arkade-knn-rtcore.pdf
+[arkade]: Papers/2024-ICS-arkade-knn-rtcore.pdf
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8
 [dgp-recursion-slides]: https://www.cse.chalmers.se/~myreen/tfp2018/slides/Anna_Bolotina.pdf

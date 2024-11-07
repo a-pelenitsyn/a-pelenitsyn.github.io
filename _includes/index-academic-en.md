@@ -6,12 +6,11 @@ detours into HPC.
 While on postdoc with Milind at Purdue (2023–now), I am looking into making
 irregular computations (tree traversals) more efficient via compilation or
 algorithm design for recent hardware. Our main topics are:
-- functional programming with densely represented datatypes (the [Gibbon
-  compiler][gibbon]; e.g. [arXiv:2405.17590][marmoset] to appear at ECOOP'24,
-  and [ISMM'24][gibbon-ismm24]),
-- compilers for sparse tensors computations (e.g. [arXiv:2311.09549][sparseauto], in submission),
+- functional programming with densely represented datatypes with the [Gibbon
+  compiler][gibbon] (e.g. [Marmoset (ECOOP '24)][marmoset] and [Gibbon-GC (ISMM'24)][gibbon-ismm24]),
+- compilers for sparse tensors computations (e.g. [SparseAuto (OOPSLA'24)][sparseauto]),
 - general-purpose computations on ray-tracing hardware (e.g.
-  [ICS'24][arkade] — **best paper award**).
+  [Arkade (ICS'24)][arkade] — **best paper award**).
 
 <!--
 - compilers for fully homomorphic encryption (such as [Coyote][coyote]).
@@ -42,9 +41,9 @@ More on my professional history can be found in my [Curriculum Vitæ](cv.pdf).
 [oopsla21]: Projects/stability
 [vmil23]: https://doi.org/10.1145/3623507.3623556
 [gibbon]: https://iu-parfunc.github.io/gibbon/
-[sparseauto]: https://arxiv.org/abs/2311.09549
+[sparseauto]: Papers/2024-OOPSLA-sparseauto.pdf
 [coyote]: https://github.com/raghav198/coyote
-[marmoset]: https://arxiv.org/abs/2405.17590
+[marmoset]: https://doi.org/10.4230/LIPIcs.ECOOP.2024.38
 [arkade]: Papers/2024-ICS-arkade-knn-rtcore.pdf
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8

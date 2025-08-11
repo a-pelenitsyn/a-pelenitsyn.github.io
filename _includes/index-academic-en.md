@@ -34,7 +34,7 @@ improving software designs for computer algebra and error-correcting codes in
 C++ using generic and metaprogramming ([Prikl.Inf.'11, in
 Russian][generic-ecc]).
 
-More on my professional history can be found in my [Curriculum Vitæ](cv.pdf).
+More on my professional history can be found in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf).
 
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/

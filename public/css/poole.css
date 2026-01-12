@@ -428,3 +428,80 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+/*
+ * Profile Section
+ *
+ * Responsive profile layout for the homepage
+ */
+
+.profile-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-image-section {
+  flex-shrink: 0;
+}
+
+.profile-image-section img {
+  height: 250px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.profile-icons {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.profile-icons .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.profile-icons .icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+.profile-icons .ai {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.profile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-content p {
+  margin-bottom: 0.75rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 38em) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-image-section {
+    text-align: center;
+  }
+  
+  .profile-image-section img {
+    height: 200px;
+  }
+  
+  .profile-content {
+    width: 100%;
+  }
+}

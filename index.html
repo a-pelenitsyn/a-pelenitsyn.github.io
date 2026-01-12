@@ -4,17 +4,16 @@ title: Пеленицын Артём Михайлович, домашняя ст
 permalink: index.rus.html
 ---
 
-<table>
-	<tr>
-	<td style="vertical-align:top">
-		<img src="{{ site.mypic }}" height="250" valign border="0" />
-	</td>
-	<td valign="top">
+<div class="profile-container">
+	<div class="profile-image-section">
+		<img src="{{ site.mypic }}" alt="Фото профиля" />
+	</div>
+	<div class="profile-content">
 		{% comment %} include bio from extern file in markdown: {% endcomment %}
 		{% capture bio %}{% include bio.md %}{% endcapture %}
 		{{ bio | markdownify }}
-	</td>
-</table>
+	</div>
+</div>
 
 {% comment %} include links from extern file in markdown: {% endcomment %}
 {% capture links %}{% include links.md %}{% endcapture %}

@@ -21,3 +21,5 @@ author:
 version:          0.0.1
 mypic:            Pics/Brazil-2014.jpg
 
+plugins:
+  - jekyll-sitemap

@@ -1,0 +1,7 @@
+$if(news)$
+<ul>
+$for(news)$<li><em>$date$:</em> $text$</li>
+$endfor$</ul>
+$else$
+<p><em>No news yet.</em></p>
+$endif$

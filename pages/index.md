@@ -50,7 +50,7 @@ Ukraine on February 24th 2022.**
 
 ### Latest News ([all news](/news.html))
 
-$partial("templates/news-list.md")$
+$partial("templates/news-list.html")$
 
 
 ### Research Interests & Bio

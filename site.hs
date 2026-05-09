@@ -58,8 +58,9 @@ main = hakyll $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
                 news <- unsafeCompiler loadNews
+                newsItems <- mapM makeItem (take 5 news)
                 let indexCtx =
-                        constField "latestNews" (renderNewsMarkdown (Just 5) news) `mappend`
+                        listField "news" newsEntryCtx (return newsItems) `mappend`
                         defaultContext
                 getResourceBody
                     >>= applyAsTemplate indexCtx
@@ -71,8 +72,9 @@ main = hakyll $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
                 news <- unsafeCompiler loadNews
+                newsItems <- mapM makeItem news
                 let newsCtx =
-                        constField "allNews" (renderNewsMarkdown Nothing news) `mappend`
+                        listField "news" newsEntryCtx (return newsItems) `mappend`
                         defaultContext
                 getResourceBody
                     >>= applyAsTemplate newsCtx
@@ -114,6 +116,12 @@ instance Yaml.FromJSON NewsEntry where
                   <*> object Yaml..: "text"
 
 --------------------------------------------------------------------------------
+newsEntryCtx :: Context NewsEntry
+newsEntryCtx =
+    field "date" (return . newsDate . itemBody) `mappend`
+    field "text" (return . newsText . itemBody)
+
+--------------------------------------------------------------------------------
 loadNews :: IO [NewsEntry]
 loadNews = do
     result <- Yaml.decodeFileEither "data/news.yml"
@@ -122,12 +130,3 @@ loadNews = do
             fail $ "Could not parse data/news.yml: " <> Yaml.prettyPrintParseException err
         Right news ->
             pure news
-
---------------------------------------------------------------------------------
-renderNewsMarkdown :: Maybe Int -> [NewsEntry] -> String
-renderNewsMarkdown limit =
-    unlines . render . maybe id take limit
-  where
-    render [] = ["_No news yet._"]
-    render entries =
-        map (\entry -> "- *" <> newsDate entry <> ":* " <> newsText entry) entries

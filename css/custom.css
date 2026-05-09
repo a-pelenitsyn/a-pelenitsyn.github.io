@@ -1,0 +1,19 @@
+html {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+@media (min-width: 38em) {
+  html {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+body {
+  color: #414141;
+}
+
+.container {
+  max-width: 40rem;
+}

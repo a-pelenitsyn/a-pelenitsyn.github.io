@@ -4,8 +4,8 @@ title: Home
 
 <table cellspacing="6px">
 <tr>
-<td style="vertical-align:top">
-    <img src="images/Brazil-2014.jpg" height="250" border="0" />
+<td>
+    <img style="vertical-align:center" src="images/Brazil-2014.jpg" height="250" border="0" />
 </td>
 <td valign="top">
 <p><b>Current Position:</b> Postdoc Researcher with

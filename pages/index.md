@@ -48,16 +48,17 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 **🇺🇦 As a Russian national, I strongly condemn the war started by the&nbsp;Russian government in
 Ukraine on February 24th 2022.**
 
+**Research Interests.** I am broadly interested in programming languages and compilers with an angle to performance assurance.
+The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
+My professional experience is laid out in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf),
+and the list of academic publications is available on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
+
 ### Latest News ([all news](/news.html))
 
 $partial("templates/news-list.html")$
 
 
-### Research Interests & Bio
-
-I am broadly interested in programming languages and compilers, and do occasional
-detours into HPC. The central motif of my research has been enabling efficient high-level programming.
-More on my professional experience is in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf).
+### Research Bio
 
 While on postdoc with Milind at Purdue (2023–now), I am looking into making
 irregular computations (tree traversals) more efficient via compilation or
@@ -68,10 +69,6 @@ algorithm design for recent hardware. Our main topics are:
 - compilers for sparse tensors computations (e.g. [SparseAuto (OOPSLA'24)][sparseauto]),
 - general-purpose computations on ray-tracing hardware (e.g.
   [Arkade (ICS'24)][arkade] — **best paper award**).
-
-<!--
-- compilers for fully homomorphic encryption (such as [Coyote][coyote]).
--->
 
 During my PhD at Northeastern (2018–2023) and RA at Czech Technical University
 (2017–2018), I was assessing the design and implementation of the Julia

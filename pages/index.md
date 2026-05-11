@@ -2,12 +2,11 @@
 title: Home
 ---
 
-<table cellspacing="6px">
-<tr>
-<td>
-    <img style="vertical-align:center" src="images/Brazil-2014.jpg" height="250" border="0" />
-</td>
-<td valign="top">
+<div class="flex flex-col sm:flex-row border border-solid border-gray-200 bg-gray-50 mb-4">
+<div class="bio-photo p-2 border-0 border-solid border-b sm:border-b-0 sm:border-r border-gray-200 flex justify-center items-center">
+<img src="images/Brazil-2014.jpg" height="250" class="block" />
+</div>
+<div class="p-2 flex-1">
 <p><b>Current Position:</b> Postdoc Researcher with
 <a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a>
 at <a href="https://purduepl.github.io/">PurPL</a>, Purdue University.
@@ -35,9 +34,8 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
   <a rel="me" id="mastodon-link" class="icon" href="https://functional.cafe/@artem">
       <img src="https://unpkg.com/@tabler/icons@3.35.0/icons/outline/brand-mastodon.svg" /></a>
 </p>
-</td>
-</tr>
-</table>
+</div>
+</div>
 
 <!-- <p><b>Alma mater:</b> <a href="http://sfedu.ru/index_eng.php">Southern Federal University</a>,
 I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences

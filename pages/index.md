@@ -104,19 +104,24 @@ Russian][generic-ecc]).
 
 ### Technical Interests
 
-I'm interested in programming (or, more generally, “software”) languages as they
-pertain to software and systems, e.g.
-programming languages' ecosystems (especially, Haskell and Julia's ones),
-build systems and software package managers (especially, the Nix package manager and NixOS),
-verified software via interactive theorem provers and dependent types (Coq, Agda, Idris),
-modal editing (in the spirit of `vi`) and (Doom) Emacs, Linux and Open Source Software.
-Check out:
+I'm passionate about functional programming and Haskell in particular.
+I have been using Haskell now and then since about 2011.
+Lately, my two main Haskell-related endeavors are:
 
-* My contributions to the [GHC Haskell compiler][ghc] and the [Cabal package
-  manager][cabal] — the pillars of Haskell ecosystem (fun fact: I'm one of the Cabal
-  maintainers currently).
-* [Blog post about my internship at Tweag I/O in 2019][4] where I developed a bridge between GHC and the Bazel build system.
+- [maintaining Cabal][cabal] library and build tool for Haskell,
+- maintaining a community version of the popular Haskell textbook [_Learn You  a Haskell for Great Good!_](https://github.com/learnyouahaskell/learnyouahaskell.github.io)
+
+My past contributions to the Haskell ecosystem include [patching GHC][ghc], the main Haskell compiler, and
+developing a prototype bridge between GHC and the Bazel build system during [my internship at Tweag][4].
+
+More generally, I'm interested in programming (or, more generally, “software”) languages as they
+pertain to software and systems, including 
+
+- programming languages' ecosystems (especially, Haskell and Julia ones),
+- build systems, such as Cabal and Bazel, and software package managers, especially the Nix package manager and NixOS,
+- verified software via interactive theorem provers and dependent types, such as Coq, Agda, and Idris,
+- modal editing (in the spirit of `vi`) and (Doom) Emacs, Linux and Open Source Software.
 
 [ghc]: https://github.com/ghc/ghc/search?o=desc&q=author%3Aulysses4ever&s=committer-date&type=Commits
-[cabal]: https://github.com/haskell/cabal/search?o=desc&q=author%3Aulysses4ever&s=committer-date&type=Commits
+[cabal]: https://github.com/haskell/cabal/blob/master/MAINTAINERS.md
 [4]: https://www.tweag.io/blog/2019-09-25-bazel-ghc-persistent-worker-internship/

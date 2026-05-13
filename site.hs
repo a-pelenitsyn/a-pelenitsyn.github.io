@@ -58,7 +58,7 @@ main = hakyll $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
                 news <- unsafeCompiler loadNews
-                newsItems <- mapM makeItem (take 5 news)
+                newsItems <- mapM makeItem (take 3 news)
                 let indexCtx =
                         listField "news" newsEntryCtx (return newsItems) `mappend`
                         defaultContext

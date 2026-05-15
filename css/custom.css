@@ -36,9 +36,50 @@ html {
   margin-bottom: var(--spacer);
 }
 
+/* Right-align toggle button in masthead */
+#theme-toggle {
+  float: right;
+}
+
 /* Brighter body text in dark mode (Poole default --gray-300 is a bit dim) */
 @media (prefers-color-scheme: dark) {
   :root {
     --body-color: var(--gray-100);
   }
+}
+
+/* ── Theme toggle button ── */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0;
+  padding: 0;
+  color: var(--body-color);
+  opacity: 0.7;
+}
+#theme-toggle:hover { opacity: 1; }
+
+/* ── Manual dark override (wins over prefers-color-scheme because custom.css
+      loads after poole.css and [attr] specificity matches :root) ── */
+[data-theme="dark"] {
+  --body-color: var(--gray-100);
+  --body-bg: var(--gray-800);
+  --heading-color: #fff;
+  --link-color: var(--blue-300);
+  --link-hover-color: var(--blue-400);
+  --border-color: rgba(255,255,255,.15);
+  --code-bg: var(--gray-900);
+}
+
+/* ── Manual light override (cancels auto-dark from prefers-color-scheme) ── */
+[data-theme="light"] {
+  --body-color: var(--gray-700);
+  --body-bg: #fff;
+  --heading-color: var(--gray-900);
+  --link-color: var(--blue);
+  --link-hover-color: #1c7ed6;
+  --border-color: var(--gray-300);
+  --code-bg: var(--gray-000);
 }

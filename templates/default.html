@@ -10,13 +10,15 @@
         <!-- CSS -->
         <link rel="stylesheet" href="/css/poole.css" />
         <link rel="stylesheet" href="/css/custom.css" />
+        <!-- Anti-FOUC: apply stored/OS theme before first paint -->
+        <script>(function(){var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}})();</script>
         <!-- Icons -->
         <!-- <script src="https://kit.fontawesome.com/29065672f5.js" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
         <link rel="shortcut icon" href="/images/favicon.ico">
         <!-- Tailwind utility classes (preflight off to avoid conflicts with Poole) -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+        <script>tailwind.config = { corePlugins: { preflight: false }, darkMode: ['selector', '[data-theme="dark"]'] }</script>
     </head>
     <body>
     <div class="container content">
@@ -24,6 +26,7 @@
             <h3 class="masthead-title">
                 <a href="/">Artem Pelenitsyn</a>
                 <small>Homepage</small>
+                <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
             </h3>
             <!-- <nav>
                  <a href="/">Home</a>
@@ -44,5 +47,22 @@
             <a href="http://jaspervdj.be/hakyll">Hakyll</a></div>
         </footer>
     </div>
+    <script>
+      (function() {
+        var btn = document.getElementById('theme-toggle');
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        function isDark() {
+          return document.documentElement.getAttribute('data-theme') === 'dark';
+        }
+        function updateIcon() { btn.textContent = isDark() ? '☀' : '🌙'; }
+        updateIcon();
+        btn.addEventListener('click', function() {
+          var next = isDark() ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          updateIcon();
+        });
+      })();
+    </script>
     </body>
 </html>

@@ -28,6 +28,7 @@ html {
 .support-ukraine__flag {
   height: 20px;
   margin-right: 10px;
+  margin-left: 5px;
   flex-shrink: 0;
 }
 .support-ukraine__flag__blue {
@@ -42,10 +43,15 @@ html {
 }
 .support-ukraine__label {
   color: #fff;
-  font-size: small;
+  font-size: 0.7rem;
   line-height: 20px;
 }
 
+@media (min-width: 38em) {
+  .support-ukraine__label {
+  font-size: smaller;
+  }
+}
 /* end of UA banner */
 
 :root {

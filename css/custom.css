@@ -30,3 +30,10 @@ html {
   width: 1.2em;
   height: 1.2em;
 }
+
+/* Brighter body text in dark mode (Poole default --gray-300 is a bit dim) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-color: var(--gray-100);
+  }
+}

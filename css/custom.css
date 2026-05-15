@@ -14,7 +14,7 @@ html {
 }
 
 .container {
-  max-width: 40rem !important;
+  max-width: 52rem !important;
 }
 
 /* Pandoc wraps the lone <img> in a <p>; remove its margin so the photo centres */

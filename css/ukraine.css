@@ -1,0 +1,51 @@
+/******************************************************** */
+/* Ukraine solidarity banner (fixed at top of every page) */
+/******************************************************** */
+
+.support-ukraine,
+.support-ukraine:visited {
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  z-index: 10000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+.support-ukraine:hover,
+.support-ukraine:active {
+  background: #505050;
+  text-decoration: none;
+}
+.support-ukraine__flag {
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+  flex-shrink: 0;
+}
+.support-ukraine__flag__blue {
+  width: 40px;
+  height: 50%;
+  background: #005bbb;
+}
+.support-ukraine__flag__yellow {
+  width: 40px;
+  height: 50%;
+  background: #ffd500;
+}
+.support-ukraine__label {
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 20px;
+}
+
+@media (min-width: 38em) {
+  .support-ukraine__label {
+  font-size: smaller;
+  }
+}
+/* end of UA banner */

@@ -5,12 +5,9 @@ html {
 /******************************************************** */
 /* Ukraine solidarity banner (fixed at top of every page) */
 /******************************************************** */
-body {
-  padding-top: 25px;
-}
+
 .support-ukraine,
 .support-ukraine:visited {
-  position: fixed;
   left: 0;
   top: 0;
   right: 0;

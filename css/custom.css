@@ -31,6 +31,11 @@ html {
   height: 1.2em;
 }
 
+/* Tighten masthead bottom margin (Poole v3 default --spacer-3 = 3rem is too large) */
+.masthead {
+  margin-bottom: var(--spacer);
+}
+
 /* Brighter body text in dark mode (Poole default --gray-300 is a bit dim) */
 @media (prefers-color-scheme: dark) {
   :root {

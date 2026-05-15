@@ -43,9 +43,6 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 
 <!-- <img src="/images/haskell-logo.png" style="float: right; margin: 10px;" /> -->
 
-**🇺🇦 As a Russian national, I strongly condemn the war started by the&nbsp;Russian government in
-Ukraine on February 24th 2022.**
-
 **Research Interests.** I am broadly interested in programming languages and compilers with an angle to performance assurance.
 The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
 My professional experience is laid out in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf),

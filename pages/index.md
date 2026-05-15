@@ -2,8 +2,8 @@
 title: Home
 ---
 
-<div class="flex flex-col sm:flex-row border border-solid border-gray-200 bg-gray-50 mb-4">
-<div class="bio-photo p-2 border-0 border-solid border-b sm:border-b-0 sm:border-r border-gray-200 flex justify-center items-center">
+<div class="flex flex-col sm:flex-row border border-solid border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 mb-4">
+<div class="bio-photo p-2 border-0 border-solid border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-600 flex justify-center items-center">
 <img src="images/Brazil-2014.jpg" height="250" class="block" />
 </div>
 <div class="p-2 flex-1">

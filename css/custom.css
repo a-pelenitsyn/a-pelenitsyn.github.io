@@ -1,6 +1,9 @@
 html {
-  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
+}
+
+:root {
+  --body-font: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 38em) {
@@ -10,10 +13,6 @@ html {
   }
 }
 
-body {
-  color: #414141;
-}
-
 .container {
   max-width: 40rem !important;
 }
@@ -21,4 +20,13 @@ body {
 /* Pandoc wraps the lone <img> in a <p>; remove its margin so the photo centres */
 .bio-photo p {
   margin: 0;
+}
+
+/* Keep icon images inline (Poole v3 sets img { display: block } globally) */
+.icon img {
+  display: inline;
+  vertical-align: middle;
+  margin-bottom: 0;
+  width: 1.2em;
+  height: 1.2em;
 }

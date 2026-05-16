@@ -14,7 +14,7 @@
         <!-- Anti-FOUC: apply stored/OS theme before first paint -->
         <script>(function(){var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}else if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}})();</script>
         <!-- Icons -->
-        <!-- <script src="https://kit.fontawesome.com/29065672f5.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
         <link rel="shortcut icon" href="/images/favicon.ico">
         <!-- Tailwind utility classes (preflight off to avoid conflicts with Poole) -->

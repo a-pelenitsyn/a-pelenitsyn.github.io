@@ -71,8 +71,8 @@ footer {
   --body-color: var(--gray-100);
   --body-bg: var(--gray-800);
   --heading-color: #fff;
-  --link-color: #F3D03E; # CU yellow
-  --link-hover-color: #F3D03E; # CU yellow
+  --link-color: #F3D03E; /* CU yellow */
+  --link-hover-color: #F3D03E; # /* CU yellow */
   --border-color: rgba(255,255,255,.15);
   --code-bg: var(--gray-900);
 }
@@ -82,8 +82,12 @@ footer {
   --body-color: var(--gray-700);
   --body-bg: #fff;
   --heading-color: var(--gray-900);
-  --link-color: #921e33; # CU red
-  --link-hover-color: #921e33; # CU red
+  --link-color: #921e33; /* CU red */
+  --link-hover-color: #921e33; /* CU red */
   --border-color: var(--gray-300);
   --code-bg: var(--gray-000);
+}
+
+a:hover {
+  text-decoration-style: dashed; /* Switches style to dotted on hover */
 }

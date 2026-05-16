@@ -9,7 +9,7 @@ title: Home
 <div class="p-2 flex-1">
 <p><b>Current Position:</b> Postdoc Researcher with
 <a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a>
-at <a href="https://purduepl.github.io/">PurPL</a>, Purdue University.
+at Purdue University (<a href="https://purduepl.github.io/">PurPL</a>).
 <p><b>Education:</b> PhD in Computer Science from
 Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).
 <p><b>Contacts:</b> a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</p>

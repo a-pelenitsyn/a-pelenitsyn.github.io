@@ -15,7 +15,7 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
 <p><b>Contacts:</b> a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</p>
 <p>
 <b>Professional links:</b>
-<span class="text-3xl">
+<span class="text-3xl whitespace-nowrap">
   <a href="https://scholar.google.com/citations?user=my1k3PQAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar ai-lg align-middle"></i></a>&nbsp;
   <a href="https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf" title="CV" rel="external nofollow noopener" target="_blank"><i class="ai ai-cv ai-lg align-middle"></i></a>&nbsp;
   <a href="https://orcid.org/0000-0001-8334-8106" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid align-middle"></i></a>&nbsp;
@@ -26,7 +26,7 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
 </p>
 <p>
 <b>Social links:</b>
-<span class="text-xl">
+<span class="text-xl whitespace-nowrap">
   <a id="twitter-link" class="icon no-underline" title="Twitter Account" aria-label="Twitter Account"
       href="https://x.com/ulysses4ever">
       <i class="fab fa-x-twitter inline-block align-middle"></i>

@@ -36,6 +36,11 @@ html {
   margin-bottom: var(--spacer);
 }
 
+footer {
+    margin-bottom: 0px;
+}
+
+
 /* Right-align toggle button in masthead */
 #theme-toggle {
   float: right;

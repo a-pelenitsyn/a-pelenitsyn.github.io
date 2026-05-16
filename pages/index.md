@@ -6,26 +6,26 @@ title: Home
 <div class="bio-photo p-2 border-0 border-solid border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-600 flex justify-center items-center">
 <img src="images/Brazil-2014.jpg" height="250" class="block" />
 </div>
-<div class="p-2 flex-1">
-<p><b>Current Position:</b> Postdoc Researcher with
-<a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a>
-at <a href="https://purduepl.github.io/">PurPL</a>, Purdue University.
-<p><b>Education:</b> PhD in Computer Science from
-Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).
-<p><b>Contacts:</b> a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</p>
-<p>
-<b>Professional links:</b>
+<div class="grid grid-cols-1 gap-1 sm:grid-cols-2">
+<div><b>Current Position:</b></div>
+<div>Postdoc Researcher with <a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a> at <a href="https://purduepl.github.io/">PurPL</a>, Purdue University.</div>
+<div><b>Education:</b></div>
+<div>PhD in Computer Science from Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).</div>
+<div><b>Contacts:</b></div>
+<div>a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</div>
+<div><b>Professional links:</b></div>
+<div>
 <span class="text-3xl">
   <a href="https://scholar.google.com/citations?user=my1k3PQAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar ai-lg align-middle"></i></a>&nbsp;
-  <a href="https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf" title="CV" rel="external nofollow noopener" target="_blank"><i class="ai ai-cv ai-lg align-middle"></i></a>&nbsp;
+  <a href="https://github.com/ulysses4ever/cv/download/head/cv.pdf" title="CV" rel="external nofollow noopener" target="_blank"><i class="ai ai-cv ai-lg align-middle"></i></a>&nbsp;
   <a href="https://orcid.org/0000-0001-8334-8106" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid align-middle"></i></a>&nbsp;
   <a id="github-link" class="icon" title="Github Account" aria-label="Github Account"
       href="https://github.com/ulysses4ever">
       <i class="fab fa-github align-middle"></i></a>
 </span>
-</p>
-<p>
-<b>Social links:</b>
+</div>
+<div><b>Social links:</b></div>
+<div>
 <span class="text-xl">
   <a id="twitter-link" class="icon no-underline" title="Twitter Account" aria-label="Twitter Account"
       href="https://x.com/ulysses4ever">
@@ -33,7 +33,7 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
       </a>&nbsp;
   <a id="facebook-link" class="icon no-underline" title="Facebook Profile" aria-label="Facebook Profile"
       href="https://www.facebook.com/ulysses4ever">
-      <i class="fab fa-facebook align-middle"/>
+      <i class="fab fa-facebook align-middle"/></i>
       </a>&nbsp;
   <a id="telegram-link" class="icon no-underline" title="Telegram Channel" aria-label="Telegram Channel"
       href="https://t.me/arpel">
@@ -46,7 +46,7 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
       <i class="fab fa-bluesky align-middle"></i>
       </a>
 </span>
-</p>
+</div>
 </div>
 </div>
 

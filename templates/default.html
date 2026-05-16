@@ -62,7 +62,7 @@
         function isDark() {
           return document.documentElement.getAttribute('data-theme') === 'dark';
         }
-        function updateIcon() { btn.textContent = isDark() ? '☀' : '🌙'; }
+        function updateIcon() { btn.textContent = isDark() ? '🌞' : '🌙'; }
         updateIcon();
         btn.addEventListener('click', function() {
           var next = isDark() ? 'light' : 'dark';

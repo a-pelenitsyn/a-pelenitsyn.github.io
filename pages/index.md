@@ -6,7 +6,7 @@ title: Home
 <div class="bio-photo p-2 border-0 border-solid border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-600 flex justify-center items-center">
 <img src="images/Brazil-2014.jpg" height="250" class="block" />
 </div>
-<div class="grid grid-cols-1 gap-1 sm:grid-cols-2">
+<div class="p-2 flex-1 grid grid-cols-1 gap-0.5 sm:grid-cols-2">
 <div><b>Current Position:</b></div>
 <div>Postdoc Researcher with <a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a> at <a href="https://purduepl.github.io/">PurPL</a>, Purdue University.</div>
 <div><b>Education:</b></div>

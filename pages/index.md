@@ -56,18 +56,20 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 
 <!-- <img src="/images/haskell-logo.png" style="float: right; margin: 10px;" /> -->
 
-**Research Interests.** I am broadly interested in programming languages and compilers with an angle to performance assurance.
-The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
-My professional experience is laid out in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf),
-and the list of academic publications is available on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
-
 ### Latest News ([all news](/news.html))
 
 $partial("templates/news-list.html")$
 
 
-### Research Bio
+### Research
 
+I am broadly interested in programming languages and compilers with an angle to performance assurance.
+The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
+My professional experience is laid out in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf),
+and the list of academic publications is available on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
+
+<details>
+<summary>Research Bio</summary>
 While on postdoc with Milind at Purdue (2023–now), I am looking into making
 irregular computations (tree traversals) more efficient via compilation or
 algorithm design for recent hardware. Our main topics are:
@@ -96,6 +98,8 @@ improving software designs for computer algebra and error-correcting codes in
 C++ using generic and metaprogramming ([Prikl.Inf.'11, in
 Russian][generic-ecc]).
 
+</details>
+
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
 [oopsla21]: Projects/stability
@@ -112,7 +116,7 @@ Russian][generic-ecc]).
 [generic-ecc]: Papers/2012-metaprogramming-to-decoding-en.pdf
 [gibbon-ismm24]: Papers/2024-gibbon-gc.pdf 
 
-### Technical Interests
+### Programming
 
 I'm passionate about functional programming and Haskell in particular.
 I have been using Haskell now and then since about 2011.
@@ -124,12 +128,16 @@ Lately, my two main Haskell-related endeavors are:
 My past contributions to the Haskell ecosystem include [patching GHC][ghc], the main Haskell compiler, and
 developing a prototype bridge between GHC and the Bazel build system during [my internship at Tweag][4].
 
+<details>
+<summary>More technical interests</summary>
+
 More generally, I'm interested in programming (or, more generally, “software”) languages as they
 pertain to software and systems, including 
 
 - programming languages' ecosystems (especially, Haskell and Julia ones),
 - build systems, such as Cabal and Bazel, and software package managers, especially the Nix package manager and NixOS,
 - verified software via interactive theorem provers and dependent types, such as Coq, Agda, and Idris,
+- reproducible research and related virtualization and containerization technologies (Docker, etc.),
 - modal editing (in the spirit of `vi`) and (Doom) Emacs, Linux and Open Source Software.
 
 [ghc]: https://github.com/ghc/ghc/search?o=desc&q=author%3Aulysses4ever&s=committer-date&type=Commits

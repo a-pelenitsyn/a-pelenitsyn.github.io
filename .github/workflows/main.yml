@@ -29,7 +29,11 @@ jobs:
       - name: Check generated HTML links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --base ./_site --no-progress './_site/**/*.html'
+          # Changed format from markdown to raw terminal output
+          args: --verbose "./_site"
+          # Blocks writing a markdown file to the workspace
+          output: ""
+          fail: true
     
       - name: Upload Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

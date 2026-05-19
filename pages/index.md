@@ -84,7 +84,7 @@ During my PhD at Northeastern (2018–2023) and RA at Czech Technical University
 (2017–2018), I was assessing the design and implementation of the Julia
 programming language ([OOPSLA '18][2], [OOPSLA '21][oopsla21], [VMIL
 '23][vmil23]). I'm still looking into Julia's notion of type stability — the
-topic of my [PhD dissertation](Papers/2023-dissertation.pdf).
+topic of my [PhD dissertation][thesis].
 
 During my teaching appointment at SFedU (2011–2016), I was working on generic
 programming techniques ([PCS'15][scala-gp]) and adviced students on topics in
@@ -100,6 +100,7 @@ Russian][generic-ecc]).
 
 </details>
 
+[thesis]: https://a.pelenitsyn.top/Papers/Papers/2023-dissertation.pdf
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
 [vmil23]: https://doi.org/10.1145/3623507.3623556

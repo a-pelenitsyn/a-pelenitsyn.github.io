@@ -13,12 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - uses: actions/checkout@v4
 
@@ -31,19 +25,33 @@ jobs:
 
       - name: Generate site
         run: make generate
-
+      
       - name: Check generated HTML links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --base ./_site --no-progress './_site/**/*.html'
-
+          # Changed format from markdown to raw terminal output
+          args: --verbose "./_site"
+          # Blocks writing a markdown file to the workspace
+          output: ""
+          fail: true
+    
       - name: Upload Pages artifact
-        if: github.event_name != 'pull_request'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site/
 
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        if: github.event_name != 'pull_request'
         uses: actions/deploy-pages@v4

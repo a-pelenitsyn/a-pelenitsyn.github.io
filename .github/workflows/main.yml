@@ -30,9 +30,13 @@ jobs:
         run: make build
 
       - name: Generate site
-        if: github.event_name != 'pull_request'
         run: make generate
-
+      
+      - name: Check generated HTML links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --base ./_site --no-progress './_site/**/*.html'
+    
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3

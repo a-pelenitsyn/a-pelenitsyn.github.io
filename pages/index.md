@@ -102,19 +102,18 @@ Russian][generic-ecc]).
 
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
-[oopsla21]: /Projects/stability
 [vmil23]: https://doi.org/10.1145/3623507.3623556
 [gibbon]: https://iu-parfunc.github.io/gibbon/
-[sparseauto]: /Papers/2024-OOPSLA-sparseauto.pdf
-[coyote]: https://github.com/raghav198/coyote
 [marmoset]: https://doi.org/10.4230/LIPIcs.ECOOP.2024.38
-[arkade]: /Papers/2024-ICS-arkade-knn-rtcore.pdf
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8
 [dgp-recursion-slides]: https://www.cse.chalmers.se/~myreen/tfp2018/slides/Anna_Bolotina.pdf
-[dgp-recursion]: /Papers/2018-unpb-dgp-recursion.pdf
-[generic-ecc]: /Papers/2012-metaprogramming-to-decoding-en.pdf
-[gibbon-ismm24]: /Papers/2024-gibbon-gc.pdf 
+[arkade]: https://a.pelenitsyn.top/Papers/2024-ICS-arkade-knn-rtcore.pdf
+[dgp-recursion]: https://a.pelenitsyn.top/Papers/2018-unpb-dgp-recursion.pdf
+[generic-ecc]: https://a.pelenitsyn.top/Papers/2012-metaprogramming-to-decoding-en.pdf
+[sparseauto]: https://a.pelenitsyn.top/Papers/2024-OOPSLA-sparseauto.pdf
+[gibbon-ismm24]: https://a.pelenitsyn.top/Papers/2024-gibbon-gc.pdf 
+[oopsla21]: /Projects/stability
 
 ### Programming
 

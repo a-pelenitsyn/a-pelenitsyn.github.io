@@ -30,7 +30,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Changed format from markdown to raw terminal output
-          args: --verbose --accept 200..=299,403 "./_site"
+          args: --timeout 60 --accept 200..=299,403 "./_site"
           # Blocks writing a markdown file to the workspace
           output: ""
           fail: true

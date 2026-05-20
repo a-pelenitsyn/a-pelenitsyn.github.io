@@ -32,7 +32,7 @@ _Resourses_
   [[GitHub]][artifact-gh] [[Zenodo]][artifact-zenodo]
 
 
-[preprint]: https://a.pelenitsyn.top/Papers/2021-julia-type-stability.pdf
+[preprint]: https://ulysses4ever.github.io/Papers/2021-julia-type-stability.pdf
 [acmdl]: https://doi.org/10.1145/3485527
 [arxiv]: https://arxiv.org/abs/2109.01950
 [artifact-gh]: https://github.com/prl-julia/julia-type-stability

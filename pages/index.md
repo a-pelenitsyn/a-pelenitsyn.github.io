@@ -100,7 +100,6 @@ Russian][generic-ecc]).
 
 </details>
 
-[thesis]: https://a.pelenitsyn.top/Papers/Papers/2023-dissertation.pdf
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
 [vmil23]: https://doi.org/10.1145/3623507.3623556
@@ -109,12 +108,13 @@ Russian][generic-ecc]).
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8
 [dgp-recursion-slides]: https://www.cse.chalmers.se/~myreen/tfp2018/slides/Anna_Bolotina.pdf
-[arkade]: https://a.pelenitsyn.top/Papers/2024-ICS-arkade-knn-rtcore.pdf
-[dgp-recursion]: https://a.pelenitsyn.top/Papers/2018-unpb-dgp-recursion.pdf
-[generic-ecc]: https://a.pelenitsyn.top/Papers/2012-metaprogramming-to-decoding-en.pdf
-[sparseauto]: https://a.pelenitsyn.top/Papers/2024-OOPSLA-sparseauto.pdf
-[gibbon-ismm24]: https://a.pelenitsyn.top/Papers/2024-gibbon-gc.pdf 
+[arkade]: https://ulysses4ever.github.io/Papers/2024-ICS-arkade-knn-rtcore.pdf
+[dgp-recursion]: https://ulysses4ever.github.io/Papers/2018-unpb-dgp-recursion.pdf
+[generic-ecc]: https://ulysses4ever.github.io/Papers/2012-metaprogramming-to-decoding-en.pdf
+[sparseauto]: https://ulysses4ever.github.io/Papers/2024-OOPSLA-sparseauto.pdf
+[gibbon-ismm24]: https://ulysses4ever.github.io/Papers/2024-gibbon-gc.pdf 
 [oopsla21]: /Projects/stability
+[thesis]: https://a.pelenitsyn.top/Papers/Papers/2023-dissertation.pdf
 
 ### Programming
 

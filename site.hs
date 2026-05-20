@@ -48,8 +48,10 @@ main = hakyll $ do
     match "pages/Projects/stability/index.md" $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
-                pandocCompiler
-                    >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                getResourceBody
+                    >>= applyAsTemplate myDefaultContext
+                    >>= renderPandoc
+                    >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
                     >>= relativizeUrls
 
     newsDependency <- makePatternDependency "data/news.yml"
@@ -61,7 +63,7 @@ main = hakyll $ do
                 newsItems <- mapM makeItem (take 3 news)
                 let indexCtx =
                         listField "news" newsEntryCtx (return newsItems) `mappend`
-                        defaultContext
+                        myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate indexCtx
                     >>= renderPandoc
@@ -75,7 +77,7 @@ main = hakyll $ do
                 newsItems <- mapM makeItem news
                 let newsCtx =
                         listField "news" newsEntryCtx (return newsItems) `mappend`
-                        defaultContext
+                        myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate newsCtx
                     >>= renderPandoc
@@ -87,7 +89,7 @@ main = hakyll $ do
         route stripPages
         compile $ do
             pandocCompiler
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
@@ -101,6 +103,12 @@ stripPages = customRoute $ drop (length ("pages/"::FilePath)) . toFilePath
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
+    myDefaultContext
+
+--------------------------------------------------------------------------------
+myDefaultContext :: Context String
+myDefaultContext =
+    constField "papersUrl" "https://ulysses4ever.github.io/Papers" `mappend`
     defaultContext
 
 

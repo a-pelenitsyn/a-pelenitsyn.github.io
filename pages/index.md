@@ -104,12 +104,12 @@ Russian][generic-ecc]).
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8
 [dgp-recursion-slides]: https://www.cse.chalmers.se/~myreen/tfp2018/slides/Anna_Bolotina.pdf
-[arkade]: https://ulysses4ever.github.io/Papers/2024-ICS-arkade-knn-rtcore.pdf
-[dgp-recursion]: https://ulysses4ever.github.io/Papers/2018-unpb-dgp-recursion.pdf
-[generic-ecc]: https://ulysses4ever.github.io/Papers/2012-metaprogramming-to-decoding-en.pdf
-[sparseauto]: https://ulysses4ever.github.io/Papers/2024-OOPSLA-sparseauto.pdf
-[gibbon-ismm24]: https://ulysses4ever.github.io/Papers/2024-gibbon-gc.pdf 
-[thesis]: https://ulysses4ever.github.io/Papers/2023-dissertation.pdf
+[arkade]: $papersUrl$/2024-ICS-arkade-knn-rtcore.pdf
+[dgp-recursion]: $papersUrl$/2018-unpb-dgp-recursion.pdf
+[generic-ecc]: $papersUrl$/2012-metaprogramming-to-decoding-en.pdf
+[sparseauto]: $papersUrl$/2024-OOPSLA-sparseauto.pdf
+[gibbon-ismm24]: $papersUrl$/2024-gibbon-gc.pdf
+[thesis]: $papersUrl$/2023-dissertation.pdf
 [oopsla21]: /Projects/stability
 
 </details>

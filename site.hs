@@ -1,7 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid   (mappend)
 import qualified Data.Yaml     as Yaml
 import           GHC.Generics  (Generic)
 import           Hakyll
@@ -36,8 +35,8 @@ main = hakyll $ do
     --     compile $ do
     --         posts <- recentFirst =<< loadAll "posts/*"
     --         let archiveCtx =
-    --                 listField "posts" postCtx (return posts) `mappend`
-    --                 constField "title" "Archives"            `mappend`
+    --                 listField "posts" postCtx (return posts) <>
+    --                 constField "title" "Archives"            <>
     --                 defaultContext
 
     --         makeItem ""
@@ -49,7 +48,8 @@ main = hakyll $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
                 pandocCompiler
-                    >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                    >>= applyAsTemplate myDefaultContext
+                    >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
                     >>= relativizeUrls
 
     newsDependency <- makePatternDependency "data/news.yml"
@@ -60,8 +60,8 @@ main = hakyll $ do
                 news <- unsafeCompiler loadNews
                 newsItems <- mapM makeItem (take 3 news)
                 let indexCtx =
-                        listField "news" newsEntryCtx (return newsItems) `mappend`
-                        defaultContext
+                        listField "news" newsEntryCtx (return newsItems) <>
+                        myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate indexCtx
                     >>= renderPandoc
@@ -74,8 +74,8 @@ main = hakyll $ do
                 news <- unsafeCompiler loadNews
                 newsItems <- mapM makeItem news
                 let newsCtx =
-                        listField "news" newsEntryCtx (return newsItems) `mappend`
-                        defaultContext
+                        listField "news" newsEntryCtx (return newsItems) <>
+                        myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate newsCtx
                     >>= renderPandoc
@@ -87,7 +87,7 @@ main = hakyll $ do
         route stripPages
         compile $ do
             pandocCompiler
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
@@ -100,7 +100,13 @@ stripPages = customRoute $ drop (length ("pages/"::FilePath)) . toFilePath
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%B %e, %Y" <>
+    myDefaultContext
+
+--------------------------------------------------------------------------------
+myDefaultContext :: Context String
+myDefaultContext =
+    constField "papersUrl" "https://ulysses4ever.github.io/Papers" <>
     defaultContext
 
 
@@ -118,7 +124,7 @@ instance Yaml.FromJSON NewsEntry where
 --------------------------------------------------------------------------------
 newsEntryCtx :: Context NewsEntry
 newsEntryCtx =
-    field "date" (return . newsDate . itemBody) `mappend`
+    field "date" (return . newsDate . itemBody) <>
     field "text" (return . newsText . itemBody)
 
 --------------------------------------------------------------------------------

@@ -96,8 +96,6 @@ improving software designs for computer algebra and error-correcting codes in
 C++ using generic and metaprogramming ([Prikl.Inf.'11, in
 Russian][generic-ecc]).
 
-</details>
-
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
 [vmil23]: https://doi.org/10.1145/3623507.3623556
@@ -111,8 +109,10 @@ Russian][generic-ecc]).
 [generic-ecc]: https://ulysses4ever.github.io/Papers/2012-metaprogramming-to-decoding-en.pdf
 [sparseauto]: https://ulysses4ever.github.io/Papers/2024-OOPSLA-sparseauto.pdf
 [gibbon-ismm24]: https://ulysses4ever.github.io/Papers/2024-gibbon-gc.pdf 
-[thesis]: https://a.pelenitsyn.top/Papers/2023-dissertation.pdf
+[thesis]: https://ulysses4ever.github.io/Papers/2023-dissertation.pdf
 [oopsla21]: /Projects/stability
+
+</details>
 
 ### Programming
 

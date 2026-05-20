@@ -54,8 +54,6 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
 I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 (<a href="http://mmcs.sfedu.ru">MMCS, Мехмат</a>). -->
 
-<!-- <img src="/images/haskell-logo.png" style="float: right; margin: 10px;" /> -->
-
 ### Latest News ([all news](/news.html))
 
 $partial("templates/news-list.html")$
@@ -103,7 +101,7 @@ Russian][generic-ecc]).
 [2]: https://www.di.ens.fr/~zappa/projects/lambdajulia/
 [rai]: https://www.relational.ai/
 [vmil23]: https://doi.org/10.1145/3623507.3623556
-[gibbon]: https://iu-parfunc.github.io/gibbon/
+[gibbon]: https://gibbon-compiler.github.io/
 [marmoset]: https://doi.org/10.4230/LIPIcs.ECOOP.2024.38
 [scala-gp]: https://doi.org/10.1134/S0361768815040064
 [parsing-effects]: https://doi.org/10.1007/978-3-319-71734-0_8
@@ -113,8 +111,8 @@ Russian][generic-ecc]).
 [generic-ecc]: https://ulysses4ever.github.io/Papers/2012-metaprogramming-to-decoding-en.pdf
 [sparseauto]: https://ulysses4ever.github.io/Papers/2024-OOPSLA-sparseauto.pdf
 [gibbon-ismm24]: https://ulysses4ever.github.io/Papers/2024-gibbon-gc.pdf 
+[thesis]: https://a.pelenitsyn.top/Papers/2023-dissertation.pdf
 [oopsla21]: /Projects/stability
-[thesis]: https://a.pelenitsyn.top/Papers/Papers/2023-dissertation.pdf
 
 ### Programming
 

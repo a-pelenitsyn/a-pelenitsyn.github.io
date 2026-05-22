@@ -120,8 +120,8 @@ I'm passionate about functional programming and Haskell in particular.
 I have been using Haskell now and then since about 2011.
 Lately, my two main Haskell-related endeavors are:
 
-- [maintaining Cabal][cabal] library and build tool for Haskell,
-- maintaining a community version of the popular Haskell textbook [_Learn You  a Haskell for Great Good!_](https://github.com/learnyouahaskell/learnyouahaskell.github.io)
+- maintaining [the Cabal library][cabal] and build tool for Haskell,
+- maintaining a community edition of the popular Haskell textbook [_Learn You  a Haskell for Great Good!_](https://github.com/learnyouahaskell/learnyouahaskell.github.io)
 
 My past contributions to the Haskell ecosystem include [patching GHC][ghc], the main Haskell compiler, and
 developing a prototype bridge between GHC and the Bazel build system during [my internship at Tweag][4].

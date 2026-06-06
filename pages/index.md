@@ -1,5 +1,6 @@
 ---
 title: Home
+modified: 2026-06-06
 ---
 
 <div class="flex flex-col sm:flex-row border border-solid border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 mb-4">

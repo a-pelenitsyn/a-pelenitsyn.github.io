@@ -83,6 +83,13 @@ main = hakyll $ do
                     >>= relativizeUrls
 
 
+    match "pages/*.md" $ do
+        route $ stripPages `composeRoutes` setExtension "html"
+        compile $ do
+            pandocCompiler
+                >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
+                >>= relativizeUrls
+
     match "pages/404.html" $ do
         route stripPages
         compile $ do

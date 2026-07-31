@@ -54,6 +54,24 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
 I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 (<a href="http://mmcs.sfedu.ru">MMCS, Мехмат</a>). -->
 
+### Teaching (Fall 2026)
+
+- CMSC 120: OOP in Java
+- CMSC 230: Advanced Java
+- CMSC 240: C Programming with Parallelism
+
+Consultations:
+
+- Monday 11 AM – 12 PM
+- Tuesday 2 – 4 PM
+- Wednesday 11 AM – 12 PM
+- Thursday 2 – 3 PM
+
+All in person (235 BFH), with the online option if desired ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)) but you need to email me beforehand (`apelenit@bloomu.edu`)
+ 
+**Full schedule** is [available here](./schedule.html).
+
+
 ### Latest News ([all news](/news.html))
 
 $partial("templates/news-list.html")$

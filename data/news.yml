@@ -1,4 +1,7 @@
 # Keep the newest items first.
+- date: Aug 2026
+  text: >-
+    Our paper on [composable abstractions for sparse matrix computation](https://arxiv.org/abs/2407.00829) has been conditionally accepted to [CGO '26](https://2026.cgo.org/track/cgo-2026-papers?#event-overview). Congrats to Pratyush, who did the heavy lifting!
 - date: Mar 2026
   text: >-
     Accepted an offer from Commonwealth University of Pennsylvania to start as a tenure-track Assistant Professor in Fall 2026
@@ -7,10 +10,10 @@
     Managed a new release of the Cabal build system and tool (3.16.1.0).
 - date: Jan 2025
   text: >-
-    Our paper on accelerating Barnes—Hut simulation with ray-tracing cores [was accepted to PPoPP 2025](https://ppopp25.sigplan.org/details/PPoPP-2025-Main-Conference-1/36/RT-BarnesHut-Accelerating-Barnes-Hut-Using-Ray-Tracing-Hardware). Congrats to Vani who did the heavy lifting!
+    Our paper on accelerating Barnes—Hut simulation with ray-tracing cores [was accepted to PPoPP 2025](https://ppopp25.sigplan.org/details/PPoPP-2025-Main-Conference-1/36/RT-BarnesHut-Accelerating-Barnes-Hut-Using-Ray-Tracing-Hardware). Congrats to Vani, who did the heavy lifting!
 - date: Jan 2025
   text: >-
-    Participated in POPL 2025. Got a chance to say "Hi!" to friends in the community.
-# - date: May 2026
-#   text: >-
-#     Our paper on optimizing memory layout of algebraic datatypes has been accepted to [ECOOP '24](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.38).
+    Participated in POPL 2025. Got a chance to say "Hi!" to friends in the programming languages community.
+- date: May 2024
+  text: >-
+    Our paper on automatically optimizing memory layout of algebraic datatypes has been accepted to [ECOOP '24](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.38). Congrats to Vidush, who did the heavy lifting!

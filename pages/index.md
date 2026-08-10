@@ -74,7 +74,9 @@ All in person (235 BFH), with the online option if desired ([Zoom](https://commo
 
 ### Latest News ([all news](/news.html))
 
+<div style="font-size: smaller;">
 $partial("templates/news-list.html")$
+</div>
 
 
 ### Research

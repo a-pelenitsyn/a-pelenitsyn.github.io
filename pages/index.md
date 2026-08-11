@@ -7,8 +7,7 @@ title: Home
 <img src="images/Brazil-2014.jpg" height="250" class="block" />
 </div>
 <div class="p-2 flex-1">
-<p><b>Current Position:</b> Postdoc Researcher with
-<a href="https://engineering.purdue.edu/~milind/">Prof. Milind&nbsp;Kulkarni</a>
+<p><b>Current Position:</b> Postdoc Researcher
 at Purdue University (<a href="https://purduepl.github.io/">PurPL</a>).
 <p><b>Education:</b> PhD in Computer Science from
 Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).
@@ -56,9 +55,9 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 
 ### Teaching (Fall 2026)
 
-- CMSC 120: OOP in Java
-- CMSC 230: Advanced Java
-- CMSC 240: C Programming with Parallelism
+- CMSC 120: OOP in Java (MW, 2–3:50 PM)
+- CMSC 230: Advanced Java (TuTh, 12:30–1:45 PM)
+- CMSC 240: C Programming with Parallelism (MW, 9–10:50 PM)
 
 Consultations:
 
@@ -88,7 +87,7 @@ and the list of academic publications is available on [Google Scholar](https://s
 
 <details>
 <summary>Research Bio</summary>
-While on postdoc with Milind at Purdue (2023–now), I am looking into making
+While on postdoc with [Milind](https://engineering.purdue.edu/~milind/) at Purdue (2023–now), I am looking into making
 irregular computations (tree traversals) more efficient via compilation or
 algorithm design for recent hardware. Our main topics are:
 

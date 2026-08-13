@@ -55,20 +55,16 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 
 ### Teaching (Fall 2026)
 
-- CMSC 120: OOP in Java (MW, 2–3:50 PM)
-- CMSC 230: Advanced Java (TuTh, 12:30–1:45 PM)
-- CMSC 240: C Programming with Parallelism (MW, 9–10:50 PM)
+- CMSC 120: OOP in Java (MW, 2–3:50 PM, Sutliff 105)
+- CMSC 230: Advanced Java (TuTh, 12:30–1:45 PM, Sutliff 106)
+- CMSC 240: C Programming with Parallelism (MW, 9–10:50 PM, Ben Franklin 103)
+- Consultations: default is in person (235 BFH); online is an option ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)), but [email me beforehand](mailto:apelenit@bloomu.edu)
+  - Monday 11 AM–12 PM
+  - Tuesday 2–4 PM
+  - Wednesday 11 AM–12 PM
+  - Thursday 2–3 PM
 
-Consultations:
-
-- Monday 11 AM – 12 PM
-- Tuesday 2 – 4 PM
-- Wednesday 11 AM – 12 PM
-- Thursday 2 – 3 PM
-
-All in person (235 BFH), with the online option if desired ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)) but you need to email me beforehand (`apelenit@bloomu.edu`)
- 
-**Full schedule** is [available here](./schedule.html).
+Life schedule is [available here](./schedule.html). Teaching history [is in my CV][cv].
 
 
 ### Latest News ([all news](/news.html))
@@ -82,8 +78,10 @@ $partial("templates/news-list.html")$
 
 I am broadly interested in programming languages and compilers with an angle to performance assurance.
 The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
-My professional experience is laid out in my [Curriculum Vitæ](https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf),
+My professional experience is laid out in my [Curriculum Vitæ][cv],
 and the list of academic publications is available on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
+
+[cv]: https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf
 
 <details>
 <summary>Research Bio</summary>

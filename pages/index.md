@@ -57,7 +57,7 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 
 - CMSC 120: OOP in Java (MW, 2–3:50 PM, Sutliff 105)
 - CMSC 230: Advanced Java (TuTh, 12:30–1:45 PM, Sutliff 106)
-- CMSC 240: C Programming with Parallelism (MW, 9–10:50 PM, Ben Franklin 103)
+- CMSC 240: Parallel Processing in C (MW, 9–10:50 PM, Ben Franklin 103)
 - Consultations: default is in person (235 BFH); online is an option ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)), but [email me beforehand](mailto:apelenit@bloomu.edu)
   - Monday 11 AM–12 PM
   - Tuesday 2–4 PM

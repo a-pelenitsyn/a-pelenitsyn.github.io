@@ -7,8 +7,8 @@ title: Home
 <img src="images/Brazil-2014.jpg" height="250" class="block" />
 </div>
 <div class="p-2 flex-1">
-<p><b>Current Position:</b> Postdoc Researcher
-at Purdue University (<a href="https://purduepl.github.io/">PurPL</a>).
+<p><b>Current Position:</b> Assistant Professor of Computer Science
+at <a href="https://commonwealthu.edu/">Commonwealth University of Pennsylvania</a>.
 <p><b>Education:</b> PhD in Computer Science from
 Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).
 <p><b>Contacts:</b> a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</p>

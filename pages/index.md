@@ -11,7 +11,7 @@ title: Home
 at <a href="https://commonwealthu.edu/">Commonwealth University of Pennsylvania</a>.
 <p><b>Education:</b> PhD in Computer Science from
 Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL</a>, 2023).
-<p><b>Contacts:</b> a&#8203;@&#8203;pelenitsyn.top, <a href="https://calendly.com/artem-pe/chat">Calendly</a>.</p>
+<p><b>Contacts:</b> <a href="mailto:apelenit@commonwealthu.edu">apelenit@commonwealthu.edu</a> if you're my student, and <a href="mailto:a@pelenitsyn.top">a@pelenitsyn.top</a> otherwise.</p>
 <p>
 <b>Professional links:</b>
 <span class="text-3xl whitespace-nowrap">

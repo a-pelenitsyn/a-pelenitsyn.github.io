@@ -58,11 +58,8 @@ I.I. Vorovitch Institute of Mathematics, Mechanics and Computer Sciences
 - CMSC 120: OOP in Java (MW, 2–3:50 PM, Sutliff 105)
 - CMSC 230: Advanced Java (MW, 9–10:50 PM, Sutliff 106)
 - CMSC 240: Parallel Processing in C (TuTh, 12:30–1:45 PM, Ben Franklin 103)
-- Consultations: default is in person (235 BFH); online is an option ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)), but [email me beforehand](mailto:apelenit@bloomu.edu); want a slot for sure? — book one through [CU Succeed](https://bloomu.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/57282/schedule)
-  - Monday 11 AM–12 PM
-  - Tuesday 2–4 PM
-  - Wednesday 11 AM–12 PM
-  - Thursday 2–3 PM
+- Consultations:  M 11 AM–12 PM, Tu 2–4 PM, W 11 AM–12 PM, Th 2–3 PM  
+    default is in person (235 BFH); online is an option ([Zoom](https://commonwealthu-edu.zoom.us/my/artem)), but [email me beforehand](mailto:apelenit@bloomu.edu); want a slot for sure? — book one through [CU Succeed](https://bloomu.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=connection/57282/schedule)
 
 Life schedule is [available here](./schedule.html). Teaching history [is in my CV][cv].
 

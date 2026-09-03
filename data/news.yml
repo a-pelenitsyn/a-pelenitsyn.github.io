@@ -1,7 +1,10 @@
 # Keep the newest items first.
 - date: Aug 2026
   text: >-
-    Our paper on [composable abstractions for sparse matrix computation](https://arxiv.org/abs/2407.00829) has been conditionally accepted to [CGO '26](https://2026.cgo.org/track/cgo-2026-papers?#event-overview). Congrats to Pratyush, who did the heavy lifting!
+    Our paper on [composable abstractions for sparse matrix computation](https://arxiv.org/abs/2407.00829) has been conditionally accepted to [CGO '26](https://2026.cgo.org/track/cgo-2026-papers?#event-overview). Congrats to [Pratyush](https://reikdas.github.io/), who did the heavy lifting!
+- date: Jun 2026
+  text: >-
+    Our paper on [rethinking collision detection on GPU ray-tracing architecture](https://dl.acm.org/doi/10.1145/3797905.3807836) has been accepted to [ICS '26](https://dipsa-qub.github.io/ICS2026-webpage/program/program.html). Congrats to [Durga](https://mdurgakeerthi.github.io/), who did the heavy lifting!
 - date: Mar 2026
   text: >-
     Accepted an offer from Commonwealth University of Pennsylvania to start as a tenure-track Assistant Professor in Fall 2026

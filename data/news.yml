@@ -1,7 +1,7 @@
 # Keep the newest items first.
 - date: Aug 2026
   text: >-
-    Our paper on [composable abstractions for sparse matrix computation](https://arxiv.org/abs/2407.00829) has been conditionally accepted to CGO '27. Congrats to [Pratyush](https://reikdas.github.io/), who did the heavy lifting!
+    Our paper on [composable abstractions for sparse matrix computation](https://arxiv.org/abs/2407.00829) has been accepted to CGO '27. Congrats to [Pratyush](https://reikdas.github.io/), who did the heavy lifting!
 - date: Jun 2026
   text: >-
     Our paper on [rethinking collision detection on GPU ray-tracing architecture](https://dl.acm.org/doi/10.1145/3797905.3807836) has been accepted to [ICS '26](https://dipsa-qub.github.io/ICS2026-webpage/program/program.html). Congrats to [Durga](https://mdurgakeerthi.github.io/), who did the heavy lifting!

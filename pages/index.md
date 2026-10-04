@@ -76,7 +76,7 @@ $partial("templates/news-list.html")$
 I am broadly interested in programming languages and compilers with an angle to performance assurance.
 The central motif of my research has been enabling efficient high-level programming whether through types, memory layouts, or utilizing modern hardware.
 My professional experience is laid out in my [Curriculum Vitæ][cv],
-and the list of academic publications is available on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
+and my publications are listed below and on [Google Scholar](https://scholar.google.com/citations?user=my1k3PQAAAAJ).
 
 [cv]: https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf
 
@@ -125,6 +125,15 @@ Russian][generic-ecc]).
 [gibbon-ismm24]: $papersUrl$/2024-gibbon-gc.pdf
 [thesis]: $papersUrl$/2023-dissertation.pdf
 [oopsla21]: /Projects/stability
+
+</details>
+
+<details>
+<summary>Publications</summary>
+
+<div style="font-size: smaller;">
+$partial("templates/pub-list.html")$
+</div>
 
 </details>
 

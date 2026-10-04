@@ -7,3 +7,6 @@ stack.yaml.lock
 site.o
 site.hi
 site
+# fetched from the cv repo by `make pubs`
+data/pubs.json
+data/pubs.json.tmp

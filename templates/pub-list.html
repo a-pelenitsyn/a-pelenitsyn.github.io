@@ -1,0 +1,6 @@
+$if(pubs)$
+<ul>
+$for(pubs)$<li><em title="$venue$">$venueshort$:</em> $if(link)$<a href="$link$">$title$</a>$else$$title$$endif$$if(preprint)$ (preprint)$endif$$if(pdf)$ [<a href="$pdf$">pdf</a>]$endif$$if(award)$ — <strong>$award$</strong>$endif$<br>
+$authors$</li>
+$endfor$</ul>
+$endif$

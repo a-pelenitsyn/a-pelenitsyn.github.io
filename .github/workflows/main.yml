@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ main ]
 
+  # The publications list comes from the cv repo (`make pubs`), so a daily build
+  # picks up what changed there.
+  schedule:
+    - cron: '23 7 * * *'
+
   workflow_dispatch:
 
 jobs:
@@ -36,13 +41,13 @@ jobs:
           fail: true
     
       - name: Upload Pages artifact
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site/
 
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     permissions:

@@ -6,11 +6,8 @@ on:
   pull_request:
     branches: [ main ]
 
-  # The publications list comes from the cv repo (`make pubs`), so a daily build
-  # picks up what changed there.
-  schedule:
-    - cron: '23 7 * * *'
-
+  # NOTE: the publications list comes from the cv repo (`make pubs`),
+  # so, when that changes, trigger a manual rebuild.
   workflow_dispatch:
 
 jobs:

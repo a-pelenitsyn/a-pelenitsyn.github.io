@@ -82,7 +82,7 @@ and my publications are listed below and on [Google Scholar](https://scholar.goo
 
 <details>
 <summary>Research Bio</summary>
-While on postdoc with [Milind](https://engineering.purdue.edu/~milind/) at Purdue (2023–now), I am looking into making
+While on postdoc with [Milind](https://engineering.purdue.edu/~milind/) at Purdue (2023–2026), I was looking into making
 irregular computations (tree traversals) more efficient via compilation or
 algorithm design for recent hardware. Our main topics are:
 

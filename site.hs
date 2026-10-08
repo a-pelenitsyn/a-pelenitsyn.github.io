@@ -62,7 +62,7 @@ main = hakyll $ do
             route $ stripPages `composeRoutes` setExtension "html"
             compile $ do
                 news <- unsafeCompiler loadNews
-                newsItems <- mapM makeItem (take 3 news)
+                newsItems <- mapM makeItem (take 4 news)
                 pubs <- unsafeCompiler loadPublications
                 pubItems <- mapM makeItem pubs
                 let indexCtx =

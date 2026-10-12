@@ -20,6 +20,9 @@
 - date: Jan 2025
   text: >-
     Participated in POPL 2025. Got a chance to say "Hi!" to friends in the programming languages community.
+- date: Oct 2024
+  text: >-
+    Joined [PLDI 2025 Review Committee](https://pldi25.sigplan.org/committee/pldi-2025-papers-pldi-review-committee).
 - date: May 2024
   text: >-
     Our paper on automatically optimizing memory layout of algebraic datatypes has been accepted to [ECOOP '24](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.38). Congrats to Vidush, who did the heavy lifting!

@@ -34,10 +34,6 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
       href="https://www.facebook.com/ulysses4ever">
       <i class="fab fa-facebook align-middle"/>
       </a>&nbsp;
-  <a id="telegram-link" class="icon no-underline" title="Telegram Channel" aria-label="Telegram Channel"
-      href="https://t.me/arpel">
-      <i class="fab fa-telegram align-middle"></i>
-      </a>&nbsp;
   <a rel="me" id="mastodon-link" class="icon no-underline" href="https://functional.cafe/@artem">
       <i class="fab fa-mastodon align-middle"></i>
       </a>&nbsp;

@@ -17,6 +17,9 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: footer "Last updated" dates come from git log.
+          fetch-depth: 0
 
       - uses: cachix/install-nix-action@v25
         with:

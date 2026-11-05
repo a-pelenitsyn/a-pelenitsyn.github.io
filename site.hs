@@ -7,6 +7,8 @@ import           Data.Maybe    (isNothing)
 import qualified Data.Yaml     as Yaml
 import           GHC.Generics  (Generic)
 import           Hakyll
+import           System.Exit   (ExitCode (..))
+import           System.Process (readProcessWithExitCode)
 
 
 --------------------------------------------------------------------------------
@@ -68,6 +70,7 @@ main = hakyll $ do
                 let indexCtx =
                         listField "news" newsEntryCtx (return newsItems) <>
                         listField "pubs" publicationCtx (return pubItems) <>
+                        lastUpdatedField ["data/news.yml"] <>
                         myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate indexCtx
@@ -82,6 +85,7 @@ main = hakyll $ do
                 newsItems <- mapM makeItem news
                 let newsCtx =
                         listField "news" newsEntryCtx (return newsItems) <>
+                        lastUpdatedField ["data/news.yml"] <>
                         myDefaultContext
                 getResourceBody
                     >>= applyAsTemplate newsCtx
@@ -121,7 +125,21 @@ postCtx =
 myDefaultContext :: Context String
 myDefaultContext =
     constField "papersUrl" papersUrl <>
+    lastUpdatedField [] <>
     defaultContext
+
+-- | Date of the last commit touching the page source or any of the extra
+-- files (e.g. data the page renders). Git, not mtime: CI checkouts reset
+-- mtimes. Contexts are left-biased, so a page's own `lastUpdatedField extras`
+-- placed before myDefaultContext wins over the default one.
+lastUpdatedField :: [FilePath] -> Context String
+lastUpdatedField extras = field "lastUpdated" $ \item -> do
+    let files = toFilePath (itemIdentifier item) : extras
+    (code, out, _) <- unsafeCompiler $
+        readProcessWithExitCode "git" (["log", "-1", "--format=%cs", "--"] ++ files) ""
+    case (code, lines out) of
+        (ExitSuccess, date : _) -> return date
+        _                       -> noResult "lastUpdated: no git history"
 
 papersUrl :: String
 papersUrl = "https://ulysses4ever.github.io/Papers"

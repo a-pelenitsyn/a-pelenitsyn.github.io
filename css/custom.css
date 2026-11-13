@@ -91,3 +91,10 @@ footer {
 a:hover {
   text-decoration-style: dashed; /* Switches style to dotted on hover */
 }
+
+/* Collapsible sections (Research Bio, Publications, ...) */
+summary {
+  font-weight: bold;
+  color: var(--heading-color);
+  cursor: pointer;
+}

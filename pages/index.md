@@ -18,6 +18,7 @@ Northeastern University (<a href="https://prl.khoury.northeastern.edu/">NEU PRL<
   <a href="https://scholar.google.com/citations?user=my1k3PQAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar ai-lg align-middle"></i></a>&nbsp;
   <a href="https://github.com/ulysses4ever/cv/releases/download/head/cv.pdf" title="CV" rel="external nofollow noopener" target="_blank"><i class="ai ai-cv ai-lg align-middle"></i></a>&nbsp;
   <a href="https://orcid.org/0000-0001-8334-8106" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid align-middle"></i></a>&nbsp;
+  <a href="https://arxiv.org/search/?searchtype=author&amp;query=Pelenitsyn%2C+Artem" title="arXiv" rel="external nofollow noopener" target="_blank"><i class="ai ai-arxiv align-middle"></i></a>&nbsp;
   <a id="github-link" class="icon" title="Github Account" aria-label="Github Account"
       href="https://github.com/ulysses4ever">
       <i class="fab fa-github align-middle"></i></a>

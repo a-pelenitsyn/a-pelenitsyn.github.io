@@ -2,7 +2,7 @@
 {-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
 import           Control.Applicative ((<|>))
-import           Data.List     (intercalate)
+import           Data.List     (intercalate, partition)
 import           Data.Maybe    (isNothing)
 import qualified Data.Yaml     as Yaml
 import           GHC.Generics  (Generic)
@@ -66,9 +66,12 @@ main = hakyll $ do
                 news <- unsafeCompiler loadNews
                 newsItems <- mapM makeItem (take 4 news)
                 pubs <- unsafeCompiler loadPublications
-                pubItems <- mapM makeItem pubs
+                let (submitted, published) = partition isSubmitted pubs
+                submittedItems <- mapM makeItem submitted
+                pubItems <- mapM makeItem published
                 let indexCtx =
                         listField "news" newsEntryCtx (return newsItems) <>
+                        listField "submitted" publicationCtx (return submittedItems) <>
                         listField "pubs" publicationCtx (return pubItems) <>
                         lastUpdatedField ["data/news.yml"] <>
                         myDefaultContext
@@ -185,6 +188,7 @@ data Publication = Publication
     , pubPreprint   :: Maybe String
     , pubPdf        :: Maybe String
     , pubAward      :: Maybe String
+    , pubStatus     :: Maybe String
     } deriving (Generic, Show)
 
 instance Yaml.FromJSON Publication where
@@ -197,11 +201,13 @@ instance Yaml.FromJSON Publication where
                     <*> object Yaml..:? "preprint"
                     <*> object Yaml..:? "pdf"
                     <*> object Yaml..:? "award"
+                    <*> object Yaml..:? "status"
 
 --------------------------------------------------------------------------------
 -- Everything is escaped here because the partial pastes fields in as they are.
--- `link` is the DOI, or the preprint for a paper accepted but not out yet, and
--- `preprint` is set only then, so the page can say which it is.
+-- `link` is the DOI, or else the preprint: for a paper accepted but not out yet,
+-- or one in submission. `preprint` is set only in the first case, so the page
+-- can say which it is; papers in submission get their own list instead.
 publicationCtx :: Context Publication
 publicationCtx =
     field "title"      (return . escapeHtml . pubTitle . itemBody) <>
@@ -209,7 +215,7 @@ publicationCtx =
     field "venue"      (return . escapeHtml . pubVenue . itemBody) <>
     field "venueshort" (return . escapeHtml . pubVenueShort . itemBody) <>
     optional "link"     (\p -> fmap ("https://doi.org/" <>) (pubDoi p) <|> pubPreprint p) <>
-    optional "preprint" (\p -> if isNothing (pubDoi p) then pubPreprint p else Nothing) <>
+    optional "preprint" (\p -> if isNothing (pubDoi p) && not (isSubmitted p) then pubPreprint p else Nothing) <>
     optional "pdf"      (fmap ((papersUrl <> "/") <>) . pubPdf) <>
     optional "award"    pubAward
   where
@@ -229,5 +235,10 @@ loadPublications = do
             fail $ "Could not parse data/pubs.json (did `make pubs` run?): "
                 <> Yaml.prettyPrintParseException err
         Right pubs ->
-            -- arXiv versions are left out, as the CV leaves them out
-            pure (filter ((/= "arXiv") . pubVenue) pubs)
+            -- arXiv versions are left out, as the CV leaves them out, unless
+            -- they stand for a paper in submission
+            pure (filter (\p -> pubVenue p /= "arXiv" || isSubmitted p) pubs)
+
+-- | Under review: listed apart from the published papers. The CV leaves these out.
+isSubmitted :: Publication -> Bool
+isSubmitted = (== Just "submitted") . pubStatus
